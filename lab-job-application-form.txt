@@ -1,0 +1,181 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <!-- Full Name -->
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Job Position -->
+      <label for="position">Job Position</label>
+      <select id="position" name="position" required>
+        <option value="" disabled selected>Select a position</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+        <option value="manager">Manager</option>
+      </select>
+
+      <!-- Radio group -->
+      <fieldset class="radio-group">
+        <legend>Availability</legend>
+
+        <input type="radio" id="full-time" name="availability" required>
+        <label for="full-time">Full-Time</label>
+
+        <input type="radio" id="part-time" name="availability">
+        <label for="part-time">Part-Time</label>
+      </fieldset>
+
+      <!-- Message -->
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input, select, textarea base styles */
+input, select, textarea {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* :focus */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007BFF;
+}
+
+/* :invalid */
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border-color: red;
+}
+
+/* :valid */
+input:valid,
+textarea:valid,
+select:valid {
+  border-color: green;
+}
+
+/* :first-of-type → Full Name input */
+input:first-of-type {
+  border-radius: 20px;
+}
+
+fieldset.radio-group {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.radio-group label {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Step 14 → Style checked radio input */
+.radio-group input[type="radio"]:checked {
+  border: 2px solid #007BFF;
+  background-color: #E0F0FF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  appearance: none;   /* hides default circle for custom look */
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+/* Step 15 → Change label text color */
+.radio-group input[type="radio"]:checked + label {
+  color: blue;
+  font-weight: bold;
+}
+
+/* Submit button */
+button {
+  padding: 10px;
+  background: #007BFF;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+/* Step 11 → focus */
+input:focus, textarea:focus {
+  border-color: blue;  /* or any color you prefer */
+}
+
+/* Step 12 → invalid */
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+
+/* Step 13 → valid */
+input:valid, select:valid, textarea:valid {
+  border-color: green;
+}
+
+
+** end of styles.css **
+
