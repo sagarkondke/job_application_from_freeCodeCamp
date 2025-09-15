@@ -15,6 +15,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   width: 350px;
+  background-image: linear-gradient(to right,rgb(66, 160, 201),rgb(181, 34, 34));
 }
 
 form {
@@ -76,9 +77,9 @@ fieldset.radio-group {
 
 /* Step 14 → Style checked radio input */
 .radio-group input[type="radio"]:checked {
-  border: 2px solid #007BFF;
+  border: 2px solid #6ca0d8;
   background-color: #E0F0FF;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 5px rgba(120, 160, 202, 0.5);
   appearance: none;   /* hides default circle for custom look */
   width: 16px;
   height: 16px;
@@ -87,14 +88,14 @@ fieldset.radio-group {
 
 /* Step 15 → Change label text color */
 .radio-group input[type="radio"]:checked + label {
-  color: blue;
+  color: rgb(4, 4, 252);
   font-weight: bold;
 }
 
 /* Submit button */
 button {
   padding: 10px;
-  background: #007BFF;
+  background: #0b77ea;
   color: #fff;
   font-size: 16px;
   border: none;
@@ -113,7 +114,7 @@ input:focus, textarea:focus {
 
 /* Step 12 → invalid */
 input:invalid, select:invalid, textarea:invalid {
-  border-color: red;
+  border-color: rgb(169, 101, 101);
 }
 
 /* Step 13 → valid */
