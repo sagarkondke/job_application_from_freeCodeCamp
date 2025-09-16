@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(to right,rgb(187, 217, 230),rgb(234, 155, 155));
+  background-image: linear-gradient(to right,rgb(187, 217, 230),rgb(215, 161, 161));
 }
 
 .container {
@@ -42,7 +42,7 @@ input, select, textarea {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #007BFF;
+  border-color: #4e6a88;
 }
 
 /* :invalid */
@@ -65,7 +65,7 @@ input:first-of-type {
 }
 
 fieldset.radio-group {
-  border: 2px solid #ccc;
+  border: 2px solid #997a7a;
   padding: 10px;
   border-radius: 5px;
 }
@@ -88,7 +88,7 @@ fieldset.radio-group {
 
 /* Step 15 → Change label text color */
 .radio-group input[type="radio"]:checked + label {
-  color: rgb(4, 4, 252);
+  color: rgb(0, 0, 227);
   font-weight: bold;
 }
 
