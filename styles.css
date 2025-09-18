@@ -15,7 +15,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   width: 350px;
-  background-image: linear-gradient(to right,rgb(66, 160, 201),rgb(181, 34, 34));
+  background-image: linear-gradient(to right,rgb(66, 160, 201),rgb(34, 181, 130));
 }
 
 form {
@@ -65,7 +65,7 @@ input:first-of-type {
 }
 
 fieldset.radio-group {
-  border: 2px solid #997a7a;
+  border: 2px solid #db9d9d;
   padding: 10px;
   border-radius: 5px;
 }
@@ -78,8 +78,8 @@ fieldset.radio-group {
 /* Step 14 → Style checked radio input */
 .radio-group input[type="radio"]:checked {
   border: 2px solid #6ca0d8;
-  background-color: #E0F0FF;
-  box-shadow: 0 0 5px rgba(120, 160, 202, 0.5);
+  background-color: #71a3d2;
+  box-shadow: 0 0 5px rgba(76, 144, 216, 0.5);
   appearance: none;   /* hides default circle for custom look */
   width: 16px;
   height: 16px;
@@ -119,5 +119,5 @@ input:invalid, select:invalid, textarea:invalid {
 
 /* Step 13 → valid */
 input:valid, select:valid, textarea:valid {
-  border-color: green;
+  border-color: rgb(23, 208, 23);
 }
